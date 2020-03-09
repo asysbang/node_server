@@ -17,9 +17,11 @@ wsServer.on('connection', sock => {
 
 	console.log('connection');
 
-	sock.on('aaa', function(a){
+	sock.on('aaa', message => {
 
-		console.log(a);
+		console.log('aaaaaa');
+
+		console.log(message);
 
 	})
 
